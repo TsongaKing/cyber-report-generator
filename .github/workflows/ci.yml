@@ -27,6 +27,9 @@ jobs:
           pip install flake8
           flake8 main.py src/parsers.py src/report_generator.py --max-line-length=120 --ignore=E501,W503
 
+      - name: Create reports directory
+        run: mkdir -p reports
+
       - name: Test pentest report generation
         run: python main.py pentest --target "172.18.0.3" --analyst "Test Analyst" --nmap samples/nmap_output.txt --nikto samples/nikto_output.txt --output reports/test_report.pdf
 
