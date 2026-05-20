@@ -1,0 +1,10 @@
+﻿Starting Nmap 7.94 at 2026-05-17 10:00 UTC
+Nmap scan report for 172.18.0.3
+Host is up (0.001s latency).
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+3306/tcp open  mysql
+8080/tcp open  http-proxy
+Nmap done: 1 IP address (1 host up) scanned in 3.45 seconds

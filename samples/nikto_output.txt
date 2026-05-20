@@ -1,0 +1,13 @@
+﻿- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP: 172.18.0.3
++ Target Port: 80
++ Server: Apache/2.4.67
++ The X-Frame-Options header is not present - vulnerable to clickjacking
++ Missing X-Content-Type-Options header
++ PHP/8.5.6 appears to be outdated
++ /config/ - Directory indexing found - exposed configuration
++ /phpinfo.php - PHP info page found - sensitive information exposure
++ /admin/login.php - Admin login page found
++ Cookie PHPSESSID set without HttpOnly flag - vulnerable to XSS session theft
+---------------------------------------------------------------------------

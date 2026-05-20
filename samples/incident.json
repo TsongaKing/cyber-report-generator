@@ -1,0 +1,32 @@
+﻿{
+  "title": "Ransomware Detection - Finance Server",
+  "severity": "Critical",
+  "affected_systems": [
+    "FINANCE-SRV-01 (192.168.1.10)",
+    "BACKUP-SRV-02 (192.168.1.11)",
+    "WORKSTATION-FIN-05 (192.168.1.25)"
+  ],
+  "timeline": [
+    {"time": "2026-05-17 08:12", "event": "Unusual file encryption activity detected on FINANCE-SRV-01"},
+    {"time": "2026-05-17 08:15", "event": "Alert triggered by EDR solution - ransomware signature match"},
+    {"time": "2026-05-17 08:18", "event": "SOC analyst notified and investigation started"},
+    {"time": "2026-05-17 08:25", "event": "Affected systems isolated from network"},
+    {"time": "2026-05-17 08:40", "event": "Incident escalated to Incident Response team"},
+    {"time": "2026-05-17 09:00", "event": "Forensic investigation initiated"}
+  ],
+  "indicators": [
+    "MD5: 5f4dcc3b5aa765d61d8327deb882cf99",
+    "IP: 185.220.101.45 (C2 server)",
+    "Domain: malicious-c2.onion",
+    "File: svchost32.exe (malicious)",
+    "Registry key: HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\svchost32"
+  ],
+  "response_actions": [
+    "Isolated affected systems from network",
+    "Blocked C2 IP at firewall level",
+    "Initiated forensic imaging of affected systems",
+    "Notified management and legal team",
+    "Preserved evidence for investigation",
+    "Started restoration from clean backups"
+  ]
+}
