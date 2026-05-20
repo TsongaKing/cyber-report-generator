@@ -2,7 +2,6 @@
 import json
 from src.parsers import parse_nmap, parse_nikto, parse_dirb, parse_soc_incident
 from src.report_generator import CyberReport
-import datetime
 
 
 @click.group()
