@@ -1,4 +1,6 @@
-﻿# Cyber Report Generator
+# Cyber Report Generator
+
+![CI - Cyber Report Generator](https://github.com/TsongaKing/cyber-report-generator/actions/workflows/ci.yml/badge.svg)
 
 A professional cybersecurity report generator that produces detailed PDF reports from security tool output.
 
