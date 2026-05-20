@@ -1,0 +1,10 @@
+﻿# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated reports
+reports/*.pdf
+
+# Test files
+test_pdf.py
